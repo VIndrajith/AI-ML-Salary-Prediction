@@ -53,3 +53,11 @@ This section compares model performance after manual hyperparameter tuning.
 | Random Forest | n_estimators = 50     | 82.8             | 0.82          | 0.83       | 0.82         |
 | Random Forest | n_estimators = 100    | 82.7             | 0.82          | 0.83       | 0.82         |
 | Random Forest | n_estimators = 150    | 82.5             | 0.81          | 0.82       | 0.82         |
+
+### 📌 Observations:
+
+- kNN improves slightly from k=3 to k=9, peaking at ~80.8% accuracy.
+
+- SVM performance is poor across all kernels, due to zero predictions for class 1.
+
+- Random Forest performs consistently well, with the best accuracy (~82.8%) at n=50.
