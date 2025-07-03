@@ -1,8 +1,5 @@
 # -*- coding: utf-8 -*-
-
-
-# **Week 1**
-
+"""Project_AI/ML.ipynb
 **EDA**
 """
 
@@ -127,8 +124,6 @@ df
 # stores modified data
 df.to_csv("m_adult.csv", index=False)
 
-"""# **Week 2**"""
-
 # imports necessary libraries
 import pandas as pd
 import numpy as np
@@ -248,8 +243,6 @@ model.fit(X_train, y_train)
 XGB_pred = model.predict(X_test)
 
 joblib.dump(model,'XGB.pkl')
-
-"""# **Week 3**"""
 
 from sklearn.metrics import classification_report, accuracy_score, confusion_matrix
 
